@@ -1,5 +1,5 @@
 * {
-    padding: 20;
+    padding: 0;
     margin: 0;
 }
 nav {
@@ -14,8 +14,8 @@ a {
     text-decoration: none;
     color: black;   
     font-size: 5.25rem;
-    font-family: amador, sans-serif;
-    font-weight: 400;
+    font-family: ff-basic-gothic-pro, sans-serif;
+    font-weight: 200;
     font-style: normal;
 }
 a:hover {
@@ -23,11 +23,9 @@ a:hover {
 }
 
 body {
-    /* background-image: url(../img/markus-spiske-69ppqHiG9Xo-unsplash.jpg);
-    background-size: cover;  */
     background: linear-gradient(217deg, rgba(206, 156, 253, 0.8), rgba(243, 238, 238, 0) 70.71%),
-            linear-gradient(127deg, rgba(218, 211, 221, 0.8), rgba(244, 245, 244, 0) 70.71%),
-            linear-gradient(336deg, rgba(153, 153, 240, 0.8), rgba(135, 135, 138, 0) 70.71%);
+            linear-gradient(127deg, rgba(108, 97, 112, 0.8), rgba(244, 245, 244, 0) 70.71%),
+            linear-gradient(336deg, rgba(88, 88, 98, 0.8), rgba(42, 42, 58, 0) 70.71%);
     height: 120vh;
     width: 100%;
     
@@ -57,17 +55,22 @@ li {
 .nav{
     display: grid;
     position: absolute;
-    top: -110vh;
+    top: -130vh;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    background: rgb(170, 169, 169);
+    background: linear-gradient(217deg, rgb(130, 75, 182), rgb(146, 113, 143) 70.71%),
+    linear-gradient(127deg, rgb(174, 138, 187), rgb(224, 220, 220) 70.71%),
+    linear-gradient(336deg, rgb(236, 236, 238), rgb(203, 164, 235) 70.71%);
     transition: top 1s;
 }
 
 .toggle {
     top: 0;
+}
+.nav {
+    height: 120vh;
 }
 .nav #val1 {
     display: flex;
@@ -75,6 +78,8 @@ li {
     justify-content: center;
     margin-top: 10%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 30%;
+    text-decoration: 2px underline;
 }
 .nav #val2 {
     display: flex;
@@ -82,6 +87,8 @@ li {
     justify-content: center;
     margin-top: 10%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0%;
+    text-decoration: 2px underline;
 }
 .nav #val3 {
     display: flex;
@@ -89,6 +96,8 @@ li {
     justify-content: center;
     margin-top: 10%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0%;
+    text-decoration: 2px underline;
 }
 
 #frontpage {
@@ -106,6 +115,7 @@ li {
     width: 78%;
     height: 100%;
     margin: auto;
+    border: 1px solid rgba(109, 107, 107, 0.5);
 }
 #winner_frontpage {
     background-color: rgb(227, 227, 233);
@@ -117,6 +127,7 @@ li {
     width: 78%;
     height: 100%;
     margin: auto;
+    border: 1px solid rgba(109, 107, 107, 0.5);
     
 }
 #loser_frontpage {
@@ -128,6 +139,7 @@ li {
     width: 78%;
     height: 100%;
     margin: auto;
+    border: 1px solid rgba(109, 107, 107, 0.5);
 }
 .title_frontpage {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -144,7 +156,14 @@ table {
 }
 td {
     font-size: 2.1rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: ff-basic-gothic-pro, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(217deg, rgb(151, 147, 147), rgb(212, 208, 212) 70.71%),
+    linear-gradient(127deg, rgb(148, 31, 31), rgb(80, 25, 25) 70.71%);
+    
 
 }
 th {
@@ -154,6 +173,10 @@ th {
 }
 .company {
     color: black;
+    border: none;
+    text-decoration: 0.6px underline;
+    font-size: 4rem;
+    background: rgb(227, 227, 233);
 }
 header {
     height:100%;

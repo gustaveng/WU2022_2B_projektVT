@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +10,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/qzr3nch.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'wwr5jle',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 
 </head>
+
 <body>
     <!-- rubrik -->
     <nav>
-          <!-- icon för meny -->
+        <!-- icon för meny -->
         <div class="burger">
             <div id="line1"></div>
             <div id="line2"></div>
@@ -25,23 +37,23 @@
 
     <div class="options">
         <div class="nav">
-            <div id="val1">Börsen idag</div>
-            <div id="val2">Nyheter</div>
-            <div id="val3">Lär dig mer</div>
+            <div id="val1"><a href="borsen_idag.html">Börsen idag</a></div>
+            <div id="val2"><a href="#">Nyheter</a></div>
+            <div id="val3"><a href="#">Lär dig mer</a></div>
         </div>
     </div>
-  
+
     <div id="frontpage">
 
         <div id="news_frontpage">
             <header>
-            <h1 class="title_frontpage">Just nu</h1>
+                <h1 class="title_frontpage">Just nu</h1>
             </header>
         </div>
 
         <div id="winner_frontpage">
             <header>
-            <h1 class="title_frontpage">Dagens Vinnare</h1>
+                <h1 class="title_frontpage">Dagens Vinnare</h1>
             </header>
             <table>
                 <tr>
@@ -62,11 +74,11 @@
                 </tr>
             </table>
         </div>
-        
+
 
         <div id="loser_frontpage">
             <header>
-            <h1 class="title_frontpage">Dagens Förlorare</h1>
+                <h1 class="title_frontpage">Dagens Förlorare</h1>
             </header>
             <table>
                 <tr>
@@ -92,9 +104,10 @@
 
 
     <footer>
-        
+
     </footer>
 
-<script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
