@@ -16,18 +16,19 @@ a {
     font-size: 5.25rem;
     font-family: ff-basic-gothic-pro, sans-serif;
     font-weight: 200;
-    font-style: normal;
+    
 }
 a:hover {
     color:solid black;
 }
 
 body {
-    background: linear-gradient(217deg, rgba(206, 156, 253, 0.8), rgba(243, 238, 238, 0) 70.71%),
-            linear-gradient(127deg, rgba(108, 97, 112, 0.8), rgba(244, 245, 244, 0) 70.71%),
-            linear-gradient(336deg, rgba(88, 88, 98, 0.8), rgba(42, 42, 58, 0) 70.71%);
+    background: linear-gradient(217deg, rgb(207, 65, 243), rgb(241, 230, 241) 70.71%),
+    linear-gradient(127deg, rgb(236, 232, 238), rgb(238, 232, 232) 70.71%),
+    linear-gradient(336deg, rgb(236, 236, 238), rgb(244, 241, 247) 70.71%);
     height: 120vh;
     width: 100%;
+    background-repeat: no-repeat;
     
 }
 li {
@@ -45,59 +46,67 @@ li {
     transition: all 0.5s;
 }
 .burger {
-    position: absolute;
+    position: fixed;
     top: 7%;
     right: 7%;
     z-index: 100;
 }
 
 
+.burger-toggle #line2{
+    opacity: 0;
+}
+
+.burger-toggle #line1{
+    transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.burger-toggle #line3{
+    transform: rotate(45deg) translate(-6px, -10px);
+}
+
 .nav{
-    display: grid;
-    position: absolute;
+    display: flex;
+    position: fixed;
     top: -130vh;
     width: 100%;
     height: 120vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    background: linear-gradient(217deg, rgb(130, 75, 182), rgb(146, 113, 143) 70.71%),
-    linear-gradient(127deg, rgb(174, 138, 187), rgb(224, 220, 220) 70.71%),
-    linear-gradient(336deg, rgb(236, 236, 238), rgb(203, 164, 235) 70.71%);
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(217deg, rgb(214, 171, 255), rgb(218, 132, 218) 70.71%),
+    linear-gradient(127deg, rgb(236, 232, 238), rgb(238, 232, 232) 70.71%),
+    linear-gradient(336deg, rgb(236, 97, 218), rgb(244, 241, 247) 70.71%);
     transition: top 1s;
+    font-family: ff-basic-gothic-pro, sans-serif;
+    text-decoration: 2px underline;
+    
+} 
+#val1 a {
+    font-size: 4rem;
 }
+#val2 a {
+    font-size: 4rem;
+}
+#val3 a {
+    font-size: 4rem;
+}
+
+
 
 .toggle {
     top: 0;
 }
-.nav {
-    height: 120vh;
-}
 .nav #val1 {
     display: flex;
-    font-size: 2.25rem;
     justify-content: center;
-    margin-top: 10%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 30%;
-    text-decoration: 2px underline;
 }
 .nav #val2 {
     display: flex;
-    font-size: 2.25rem;
-    justify-content: center;
-    margin-top: 10%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 0%;
-    text-decoration: 2px underline;
+   justify-content: center;
 }
 .nav #val3 {
     display: flex;
-    font-size: 2.25rem;
     justify-content: center;
-    margin-top: 10%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 0%;
-    text-decoration: 2px underline;
 }
 
 #frontpage {
@@ -108,14 +117,28 @@ li {
 #news_frontpage {
     background-color: rgb(227, 227, 233);
     display: grid;
-    grid-template-rows: 20% 80%;
-    justify-content: center;
+    grid-template-rows: 12% 78% 10%;
     border-radius: 10px;
     color: black;
     width: 78%;
-    height: 100%;
+    height: 30vh;
     margin: auto;
     border: 1px solid rgba(109, 107, 107, 0.5);
+}
+.img_stock {
+    height: 90%;
+    border-radius: 10px;
+    margin: auto;
+    /* margin-bottom: 10px; */
+}
+h2{
+    margin: auto;
+    font-family:ff-basic-gothic-pro, sans-serif; ;
+}
+.title_frontpage {
+    font-family: ff-basic-gothic-pro, sans-serif;
+    font-size:2.3rem;
+    margin: auto;
 }
 #winner_frontpage {
     background-color: rgb(227, 227, 233);
@@ -141,41 +164,36 @@ li {
     margin: auto;
     border: 1px solid rgba(109, 107, 107, 0.5);
 }
-.title_frontpage {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:2.3rem;
-    margin-top: 3%;
-}
+
 
 table {
     height: 100%;
     margin: auto;
     width: 70%;
     text-align: center;
-    /* grid-area: ta; */
+    
 }
 td {
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-family: ff-basic-gothic-pro, sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
     border: 1px solid black;
-    border-radius: 10px;
-    background: linear-gradient(217deg, rgb(151, 147, 147), rgb(212, 208, 212) 70.71%),
-    linear-gradient(127deg, rgb(148, 31, 31), rgb(80, 25, 25) 70.71%);
-    
+    border-radius: 7px;
+    background: rgb(214, 212, 212);
 
 }
 th {
-    font-size: 3.2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+    font-size: 2rem;
+    font-family: ff-basic-gothic-pro, sans-serif;
+    color: black;
+    margin: auto;
 }
 .company {
     color: black;
     border: none;
     text-decoration: 0.6px underline;
-    font-size: 4rem;
+    font-size: 3rem;
     background: rgb(227, 227, 233);
 }
 header {
@@ -191,3 +209,26 @@ header {
     height: 10%;
     background-color: rgb(82, 82, 82);
 } */
+
+
+
+
+
+/* HÄR BÖRJAR BÖRSEN_IDAG.HTML */
+
+
+
+
+
+#gridwrapper {
+    display: grid;
+    grid-gap: 3%;
+}
+
+.table {
+    background-color: rgb(253, 253, 253);
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    
+}

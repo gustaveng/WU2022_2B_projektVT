@@ -7,15 +7,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Börsen</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'wwr5jle',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
 
+    <nav>
+        <!-- icon för meny -->
+        <div class="burger">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+        </div>
+        <a href="index.html">Börsen</a>
+    </nav>
+
+    <div class="options">
+        <div class="nav">
+            <div id="val1"><a href="borsen_idag.html">Börsen idag</a></div>
+            <div id="val2"><a href="news.html">Nyheter</a></div>
+            <div id="val3"><a href="#">Lär dig mer</a></div>
+        </div>
+    </div>
+
+
+
+    <div id="gridwrapper">
+    <section class="table">
+        <table>
+            <tr>
+                <th>Dow Jones</th>
+                <th>+ / -</th>
+            </tr>
+            <tr>
+                <td class="">MSFT</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td class="">META</td>
+                <td>6.2%</td>
+            </tr>
+            <tr>
+                <td class="">ORCL</td>
+                <td>13.2%</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="table">
+        <table>
+            <tr>
+                <th>OMX Nordic 40</th>
+                <th>+ / -</th>
+            </tr>
+            <tr>
+                <td class="">FRTX</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td class="">WLSM</td>
+                <td>6.2%</td>
+            </tr>
+            <tr>
+                <td class="">IKEA</td>
+                <td>13.2%</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="table">
+        <table>
+            <tr>
+                <th>Hang Seng</th>
+                <th>+ / -</th>
+            </tr>
+            <tr>
+                <td class="">MSFT</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td class="">META</td>
+                <td>6.2%</td>
+            </tr>
+            <tr>
+                <td class="">ORCL</td>
+                <td>13.2%</td>
+            </tr>
+        </table>
+    </section>
+    </div>
 
 
 
 
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
