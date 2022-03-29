@@ -232,3 +232,30 @@ header {
     border-radius: 5px;
     
 }
+
+
+
+
+.newswrapper {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    border-radius: 10px;
+    color: black;
+    width: 85%;
+    height: 120vh;
+    margin: auto;
+    border: 1px solid rgba(109, 107, 107, 0.5);
+    background-color: rgb(36, 52, 122);
+    
+}
+.news {
+    background-color: rgb(255, 255, 255);
+    margin: 13px;
+    border-radius: 10px;
+}
+.newstitle {
+    font-family: ff-basic-gothic-pro, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
