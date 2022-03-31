@@ -5,10 +5,9 @@
 nav {
     margin-top: 5%;
     display: flex;
+    position: relative;
     text-decoration: none;
     justify-content: center;
-    
-    
 }   
 a {
     text-decoration: none;
@@ -16,17 +15,13 @@ a {
     font-size: 5.25rem;
     font-family: ff-basic-gothic-pro, sans-serif;
     font-weight: 200;
-    
 }
 a:hover {
     color:solid black;
 }
 
 body {
-    background: linear-gradient(217deg, rgb(207, 65, 243), rgb(241, 230, 241) 70.71%),
-    linear-gradient(127deg, rgb(236, 232, 238), rgb(238, 232, 232) 70.71%),
-    linear-gradient(336deg, rgb(236, 236, 238), rgb(244, 241, 247) 70.71%);
-    height: 120vh;
+    background: white
     width: 100%;
     background-repeat: no-repeat;
     
@@ -73,14 +68,15 @@ li {
     height: 120vh;
     flex-direction: column;
     justify-content: space-evenly;
-    background: linear-gradient(217deg, rgb(214, 171, 255), rgb(218, 132, 218) 70.71%),
-    linear-gradient(127deg, rgb(236, 232, 238), rgb(238, 232, 232) 70.71%),
-    linear-gradient(336deg, rgb(236, 97, 218), rgb(244, 241, 247) 70.71%);
+    background: white;
     transition: top 1s;
     font-family: ff-basic-gothic-pro, sans-serif;
     text-decoration: 2px underline;
-    
 } 
+    
+
+
+
 #val1 a {
     font-size: 4rem;
 }
@@ -115,7 +111,7 @@ li {
     gap: 2%
 }
 #news_frontpage {
-    background-color: rgb(227, 227, 233);
+    background-color: rgb(247, 247, 247);
     display: grid;
     grid-template-rows: 12% 78% 10%;
     border-radius: 10px;
@@ -124,6 +120,9 @@ li {
     height: 30vh;
     margin: auto;
     border: 1px solid rgba(109, 107, 107, 0.5);
+    -webkit-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
+-moz-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
+box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
 }
 .img_stock {
     height: 90%;
@@ -137,11 +136,12 @@ h2{
 }
 .title_frontpage {
     font-family: ff-basic-gothic-pro, sans-serif;
-    font-size:2.3rem;
+    font-size:2rem;
     margin: auto;
+    padding: 2px;
 }
 #winner_frontpage {
-    background-color: rgb(227, 227, 233);
+    background-color: rgb(247, 247, 247);
     display: grid;
     grid-template-rows: 12% 88%;
     color:rgb(51, 230, 51);
@@ -151,10 +151,13 @@ h2{
     height: 100%;
     margin: auto;
     border: 1px solid rgba(109, 107, 107, 0.5);
+    -webkit-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
+-moz-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
+box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
     
 }
 #loser_frontpage {
-    background-color: rgb(227, 227, 233);
+    background-color: rgb(247, 247, 247);
     display: grid;
     grid-template-rows: 12% 88%;
     color:rgb(253, 0, 0);
@@ -163,6 +166,9 @@ h2{
     height: 100%;
     margin: auto;
     border: 1px solid rgba(109, 107, 107, 0.5);
+    -webkit-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
+-moz-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
+box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
 }
 
 
@@ -180,7 +186,8 @@ td {
     font-style: normal;
     border: 1px solid black;
     border-radius: 7px;
-    background: rgb(214, 212, 212);
+    background: rgb(252, 252, 252);
+    padding: 0;
 
 }
 th {
@@ -194,7 +201,7 @@ th {
     border: none;
     text-decoration: 0.6px underline;
     font-size: 3rem;
-    background: rgb(227, 227, 233);
+    /* background: rgb(227, 227, 233); */
 }
 header {
     height:100%;
