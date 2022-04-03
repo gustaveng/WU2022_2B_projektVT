@@ -64,9 +64,10 @@ li {
 }
 
 .nav{
+    z-index: 1;
     display: flex;
     position: fixed;
-    top: -130vh;
+    top: -200vh;
     width: 100%;
     height: 120vh;
     flex-direction: column;
@@ -116,14 +117,38 @@ li {
     justify-content: center;
 }
 
+
+
 #frontpage {
     display: grid;
     grid-template-rows: 30% 30% 30%;
     height: 100vh;
     gap: 2%;
 }
+@media (min-width: 500px) {
+    #frontpage {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 30% 30% 30%;
+        height: 100vh;
+        gap: 1%;}
+    
+    .img_stock {
+        height: 40%;
+        width: 90%;
+    }
+    #news_frontpage {
+        width: 100%;
+    }
+
+
+
+
+
+
+}
 #news_frontpage {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(250, 250, 250);
     display: grid;
     grid-template-rows: 12% 78% 10%;
     border-radius: 10px;
@@ -132,9 +157,9 @@ li {
     height: 100%;
     margin: auto;
     border: 1px solid rgba(109, 107, 107, 0.5);
-    -webkit-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
-    -moz-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
-    box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
+    -webkit-box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
+    -moz-box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
+    box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
 }
 .img_stock {
     height: 90%;
@@ -153,7 +178,7 @@ h2{
     padding: 2px;
 }
 #winner_frontpage {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(250, 250, 250);
     display: grid;
     grid-template-rows: 12% 88%;
     border-radius: 10px;
@@ -163,13 +188,13 @@ h2{
     margin: auto;
     color: green;   
     border: 1px solid rgba(109, 107, 107, 0.5);
-    -webkit-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
-    -moz-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
-    box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
+    -webkit-box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
+    -moz-box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
+    box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
     
 }
 #loser_frontpage {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(250, 250, 250);
     display: grid;
     grid-template-rows: 12% 88%;
     border-radius: 10px;
@@ -178,9 +203,9 @@ h2{
     color: red;
     margin: auto;
     border: 1px solid rgba(109, 107, 107, 0.5);
-    -webkit-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
-    -moz-box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
-    box-shadow: 0px 7px 18px 1px rgba(143,141,143,0.59);
+    -webkit-box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
+    -moz-box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
+    box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
 }
 
 
@@ -231,10 +256,6 @@ header {
 
 
 
-/* HÄR BÖRJAR BÖRSEN_IDAG.HTML */
-
-
-
 
 
 #gridwrapper {
@@ -256,34 +277,75 @@ header {
 
 
 
-
-
-
-
-
-
 .newswrapper {
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
     border-radius: 10px;
     color: black;
     width: 85%;
-    height: 120vh;
+    height: 150vh;
     margin: auto;
     border: 1px solid rgba(109, 107, 107, 0.5);
     padding: 0;
     webkit-box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
     -moz-box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
     box-shadow: 11px 11px 7px -10px rgba(156,156,156,0.67);
-    gap: 10px;
-    
-    
 }
 #breaking_news_picture {
     background-image: url(../img/david-thielen-R5Ob28wpWzo-unsplash.jpg);
     background-position: 50% 50%;
-    
+    background-repeat: no-repeat;
+    border-radius: 7px;    
 }
+#bitcoin {
+    background-image: url(../img/bitocin.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 7px;    
+}
+#oil {
+    background-image: url(../img/oilbarrel.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 7px;    
+}
+#gold {
+    background-image: url(../img/gold.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 7px;    
+}
+
+@media (min-width: 730px) {
+    .newswrapper {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 1fr;
+        width: 95%;
+        height: 100vh;
+
+    }
+    #breaking_news_picture {
+        background-size: cover;
+    }
+    #bitcoin {
+        background-size: cover;
+    }
+    #oil {
+        background-size: cover;
+    }
+    #gold {
+        background-size: cover;
+    }
+    .newstitle {
+        font-size: 10rem;
+    }
+}
+
+
+
+
+
 
 
 .news {
@@ -301,7 +363,70 @@ header {
 }
 
 
-.footer {
-    background-color: black;
+#gridwrappernews {
+    display: grid;
+    grid-gap: 3%;
+    height: 100vh;
+    grid-template-rows: 50% 50%; 
+    margin: auto;
 }
 
+
+p {
+    font-family: ff-basic-gothic-pro, sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#boss_img {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    height: 40vh;
+}
+
+.button {
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+.btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+.button:active{
+        box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                    -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+          inset -4px -4px 6px 0 rgba(255,255,255,.2),
+          inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+      }
+.button:hover {
+        background: #000;
+       color: #fff;
+     }
+.button:before {
+         position: absolute;
+         content: '';
+         display: inline-block;
+         top: -180px;
+         left: 0;
+         width: 30px;
+         height: 100%;
+         background-color: #fff;
+}

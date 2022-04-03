@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Börsen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'wwr5jle',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    </head>
+
+    <body>
+        <!-- rubrik -->
+        <nav>
+            <!-- icon för meny -->
+            <div class="burger">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+            <a href="index.html">Börsen</a>
+        </nav>
+
+        <div class="options">
+            <div class="nav">
+                <div id="mainpage"><a href="index.html">Börsen</a></div>
+                <div id="val1"><a href="borsen_idag.html">Börsen idag</a></div>
+                <div id="val2"><a href="news.html">Nyheter</a></div>
+                <div id="val3"><a href="learn_more.html">Lär dig mer</a></div>
+            </div>
+        </div>
+
+
+        <div id="gridwrappernews">
+            <article>
+                <h1 class="newstitle">Investera som miljonerärerna</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt explicabo provident, unde
+                    aspernatur
+                    quis minima quod minus? Recusandae, soluta doloribus.</p>
+                <img src="img/boss.jpg" alt="bild på en Investerare" id="boss_img">
+
+            </article>
+
+            <article>
+                <h2 class="newstitle">Bli kund hos oss</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A quaerat illum cum libero facilis
+                    similique.</p>
+
+                <div class="frame">
+                    <button class="btn button">Ansök nu</button>
+                </div>
+
+            </article>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
